@@ -1,0 +1,176 @@
+<!-- Updated HTML form with clickable links in options -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Diego Family Trip Voting Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #dbefff, #ffffff);
+      color: #333;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #006994;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+    .options {
+      margin-bottom: 1rem;
+    }
+    .options input {
+      margin-right: 8px;
+    }
+    .options a {
+      text-decoration: none;
+      color: #006994;
+    }
+    button {
+      padding: 10px 20px;
+      background: #006994;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #005076;
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 14px;
+      color: #777;
+    }
+    .emoji-title {
+      font-size: 22px;
+    }
+    .banner-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/San_Diego_Skyline_Daytime.jpg/1024px-San_Diego_Skyline_Daytime.jpg" alt="San Diego Banner" class="banner-img">
+  <h1 class="emoji-title">🌴 San Diego Family Trip Voting Form 🌮</h1>
+  <form id="tripForm">
+    <div class="section">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="section">
+      <label>Day 1 - Arrival + Chill Vibes</label>
+      <div class="options">
+        <input type="radio" name="day1" value="La Jolla + Blue Water Seafood"> <a href="https://www.bluewatergrill.com/locations/point-loma/" target="_blank">La Jolla Cove + Dinner at Blue Water Seafood</a> (~$35–50)<br>
+        <input type="radio" name="day1" value="La Jolla + Cuatro Milpas"> <a href="https://www.yelp.com/biz/las-cuatro-milpas-san-diego" target="_blank">La Jolla Cove + Las Cuatro Milpas</a> (~$20–30)<br>
+        <input type="radio" name="day1" value="Chill + Sunset Cliffs"> <a href="https://www.sandiego.org/articles/parks-gardens/sunset-cliffs.aspx" target="_blank">Chill Day + Sunset Cliffs Evening</a>
+      </div>
+    </div>
+    <div class="section">
+      <label>Day 2 - Explore the City</label>
+      <div class="options">
+        <input type="radio" name="day2" value="Zoo"> <a href="https://zoo.sandiegozoo.org/" target="_blank">San Diego Zoo</a> (~$50–70 w/ discount)<br>
+        <input type="radio" name="day2" value="Balboa"> <a href="https://www.balboapark.org/" target="_blank">Balboa Park Museums</a> (~$20–30)<br>
+        <input type="radio" name="day2" value="Midway"> <a href="https://www.midway.org/" target="_blank">USS Midway Museum</a> (~$25)<br>
+        <input type="radio" name="day2" value="Dinner"> <a href="https://www.seaportvillage.com/" target="_blank">Seaport Village / Prado / Lucha Libre Tacos</a>
+      </div>
+    </div>
+    <div class="section">
+      <label>Day 3 - Beach & Casino Energy</label>
+      <div class="options">
+        <input type="radio" name="day3" value="Mission Beach"> <a href="https://www.belmontpark.com/" target="_blank">Mission Beach + Belmont Park</a> (~$30)<br>
+        <input type="radio" name="day3" value="Pacific Beach"> <a href="https://www.sandiego.org/explore/things-to-do/beaches-bays/pacific-beach.aspx" target="_blank">Pacific Beach + Chill</a><br>
+        <input type="radio" name="day3" value="Sycuan"> <a href="https://www.sycuan.com/" target="_blank">Optional: Sycuan Casino</a> (~$50–100)<br>
+        <input type="radio" name="day3" value="Jamul or Viejas"> <a href="https://www.jamulcasinosd.com/" target="_blank">Jamul</a> / <a href="https://viejas.com/" target="_blank">Viejas Casino</a>
+      </div>
+    </div>
+    <div class="section">
+      <label>Day 4 - Flex / Wind-down Day</label>
+      <div class="options">
+        <input type="radio" name="day4" value="Coronado"> <a href="https://www.sandiego.org/explore/things-to-do/beaches-bays/coronado.aspx" target="_blank">Coronado Island Brunch</a><br>
+        <input type="radio" name="day4" value="Old Town"> <a href="https://www.oldtownsandiego.org/" target="_blank">Old Town SD + Souvenirs</a><br>
+        <input type="radio" name="day4" value="Relax"> Early Wrap-Up + Relaxation
+      </div>
+    </div>
+    <div class="section">
+      <label for="notes">Notes / Special Requests:</label>
+      <textarea name="notes" id="notes" rows="4" style="width:100%; border-radius:6px;"></textarea>
+    </div>
+    <div class="section">
+      <button type="submit">Submit My Vote</button>
+    </div>
+  </form>
+  
+  <!-- Updated HTML form with additional section for optional sites of interest -->
+<!-- Full code preserved as is; new section added below existing sections -->
+
+<!-- [Previous HTML code here — kept intact] -->
+
+    <div class="section">
+      <label for="additionalSites">Additional Sites of Interest (optional):</label>
+      <div class="options">
+        <input type="checkbox" name="additionalSites" value="Cabrillo National Monument"> <a href="https://www.nps.gov/cabr/index.htm" target="_blank">Cabrillo National Monument</a><br>
+        <input type="checkbox" name="additionalSites" value="Liberty Public Market"> <a href="https://libertypublicmarket.com/" target="_blank">Liberty Public Market</a><br>
+        <input type="checkbox" name="additionalSites" value="Torrey Pines State Reserve"> <a href="https://www.parks.ca.gov/?page_id=657" target="_blank">Torrey Pines State Reserve</a><br>
+        <input type="checkbox" name="additionalSites" value="Birch Aquarium"> <a href="https://aquarium.ucsd.edu/" target="_blank">Birch Aquarium at Scripps</a><br>
+        <input type="checkbox" name="additionalSites" value="Little Italy Food Tour"> <a href="https://www.littleitalytours.com/" target="_blank">Little Italy Food Tour</a>
+      </div>
+    </div>
+
+<!-- [Form submission and script remain unchanged] -->
+
+  <div class="footer-note">💛 San Diego vibes only – thanks for helping plan the family trip!</div>
+
+  <script>
+    document.getElementById("tripForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const data = {
+        name: formData.get("name"),
+        day1: formData.get("day1"),
+        day2: formData.get("day2"),
+        day3: formData.get("day3"),
+        day4: formData.get("day4"),
+        notes: formData.get("notes")
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycby87TloE4kMLXHMP17XmySgRSm9wIW1JbFIBRAx456I4Mo7OtD-SKGd32W3aCVFMAxb/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(response => response.json())
+      .then(res => {
+        if (res.result === "Success") {
+          alert("✅ Vote submitted successfully!");
+          document.getElementById("tripForm").reset();
+        } else {
+          alert("❌ There was a problem submitting your vote.");
+        }
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        alert("❌ Error submitting vote. Try again later.");
+      });
+    });
+  </script>
+</body>
+</html>
